@@ -44,3 +44,115 @@ In JavaScript, variables can be declared using `var`, `let`, or `const`. They di
 
 ---
 
+##2️⃣ What is the spread operator (...)?
+
+**Answer:**
+
+The **spread operator** (`...`) allows an **iterable** (like an array or object) to be expanded into individual elements. It is commonly used for **copying arrays, merging arrays, and passing multiple arguments** to functions.
+
+- **`Array example:`**
+
+    ```javascript
+    const arr1 = [1, 2, 3];
+    const arr2 = [...arr1, 4, 5]; // [1, 2, 3, 4, 5]
+    ```
+
+- **`Object example:`**
+
+    ```javascript
+    const obj1 = { a: 1, b: 2 };
+    const obj2 = { ...obj1, c: 3 }; // { a: 1, b: 2, c: 3 }
+    ```
+
+- **`Function arguments example:`**
+
+    ```javascript
+    function sum(a, b, c) {
+        return a + b + c;
+    }
+    const nums = [1, 2, 3];
+    console.log(sum(...nums)); // 6
+    ```
+
+- **Tip:** Spread operator is **different from rest operator**, though both use `....`
+    - **Spread:** Expands an iterable
+    - **Rest:** Collects remaining elements into an array
+
+---
+
+
+##3️⃣ What is the difference between map(), filter(), and forEach()?
+
+**Answer:**
+
+These are array methods used for **iterating over arrays**, but they serve different purposes:
+
+- **`map()`**
+    - Creates a **new array** by applying a function to each element.
+    - **Returns:** a new array
+    - **Example:**
+
+    ```javascript
+    const numbers = [1, 2, 3];
+    const doubled = numbers.map((num) => num * 2);
+    console.log(doubled); // [2, 4, 6]
+    ```
+
+- **`filter()`**
+    - Creates a **new array** containing elements that meet a condition.
+    - **Returns:** a new array
+    - **Example:**
+
+    ```javascript
+    const numbers = [1, 2, 3, 4];
+    const evenNumbers = numbers.filter((num) => num % 2 === 0);
+    console.log(evenNumbers); // [2, 4]
+    ```
+
+- **`forEach()`**
+    - Executes a function for each element in the array.
+    - **Does not return** a new array.
+    - **Example:**
+
+    ```javascript
+    const numbers = [1, 2, 3];
+    numbers.forEach((num) => console.log(num));
+    // Output: 1 2 3
+    ```
+
+- **`Tip:`** Use `map` or `filter` if you want a **new array**, and `forEach` if you just want to **perform side effects.**
+
+---
+
+##4️⃣ What is an arrow function?
+
+**Answer:**
+
+Arrow functions provide a **shorter syntax** to define functions and have **lexical** `this`, meaning they inherit `this` from their parent scope.
+
+- **`Syntax:`**
+
+    ```javascript
+    const functionName = (parameters) => expression;
+    ```
+
+- **`Examples:`**
+
+    ```javascript
+    // Single line
+    const add = (a, b) => a + b;
+    console.log(add(2, 3)); // 5
+
+    // Multiple lines
+    const multiply = (a, b) => {
+        const result = a * b;
+        return result;
+    };
+    console.log(multiply(2, 3)); // 6
+    ```
+
+- **`Tip:`** Avoid arrow functions for object methods if you need `this` to refer to the object.
+
+---
+
+
