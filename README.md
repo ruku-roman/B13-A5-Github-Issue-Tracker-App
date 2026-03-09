@@ -1,4 +1,4 @@
-##1️⃣ What is the difference between var, let, and const?
+## 1 What is the difference between var, let, and const?
 
 **Answer:**
 
@@ -44,7 +44,7 @@ In JavaScript, variables can be declared using `var`, `let`, or `const`. They di
 
 ---
 
-##2️⃣ What is the spread operator (...)?
+## 2 What is the spread operator (...)?
 
 **Answer:**
 
@@ -81,7 +81,7 @@ The **spread operator** (`...`) allows an **iterable** (like an array or object)
 ---
 
 
-##3️⃣ What is the difference between map(), filter(), and forEach()?
+## 3 What is the difference between map(), filter(), and forEach()?
 
 **Answer:**
 
@@ -124,7 +124,7 @@ These are array methods used for **iterating over arrays**, but they serve diffe
 
 ---
 
-##4️⃣ What is an arrow function?
+## 4 What is an arrow function?
 
 **Answer:**
 
@@ -156,7 +156,7 @@ Arrow functions provide a **shorter syntax** to define functions and have **lexi
 ---
 
 
-##5️⃣ What are template literals?
+## 5 What are template literals?
 
 **Answer:**
 
